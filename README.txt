@@ -81,3 +81,5 @@ project-folder/
   script.js
   README.txt
   assets/ (contains images, icons, and video)
+
+https://hasan-2077.github.io/ITMD-362-Final/
