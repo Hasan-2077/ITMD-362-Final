@@ -48,19 +48,21 @@ img {
 }
 
 /* CENTERED LOGO */
-.logo {
-  flex: 0;
-  font-size: 2.6rem;
+.limerence {
+  width: 399px;
+  height: 84px;
+  position: relative;
+  font-size: 64px;
   font-weight: 900;
-  text-align: center;
-  margin: 0;
-
-  background: linear-gradient(90deg, #FFD000 48%, #FFD20A 88%);
+  font-family: 'Bodoni Moda', serif;
+  background: linear-gradient(90deg, #ffd000 48.08%, #ffd20a 88.46%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
+  text-align: center;
+  display: inline-block;
   text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
 }
+
 
 /* RIGHT SIDE (EMPTY FOR NOW) */
 .nav-right {
