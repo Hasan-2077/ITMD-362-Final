@@ -60,6 +60,7 @@ img {
   -webkit-text-fill-color: transparent;
   text-align: center;
   display: inline-block;
+color: #FFD209; /* fallback for unsupported gradient browsers */
   text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
 }
 
