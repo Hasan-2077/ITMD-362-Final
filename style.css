@@ -1,0 +1,255 @@
+/* === GLOBAL === */
+body {
+  margin: 0;
+  font-family: 'Buenard', serif;
+  background-color: #EEE8E8;
+  color: #000;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.full-width {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+/* === CONTAINER WIDTH === */
+.navbar,
+main,
+.site-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* === HEADER === */
+.site-header {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #FFD209;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LEFT NAV LINKS */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.nav-left a {
+  font-weight: bold;
+  font-family: 'Bodoni Moda', serif;
+}
+
+/* CENTERED LOGO */
+.limerence {
+  font-size: 64px;
+  font-weight: 900;
+  font-family: 'Bodoni Moda', serif;
+  background: linear-gradient(90deg, #ffd000 48.08%, #ffd20a 88.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  color: #FFD209;
+  flex: 1;
+}
+
+/* RIGHT NAVBAR */
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  flex: 1;
+}
+
+/* Dark Mode Toggle Button */
+#dark-mode-toggle {
+  background-color: #FFD209;
+  color: black;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Nav Icons */
+.nav-icon {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+/* === HERO VIDEO === */
+.hero-video video {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  height: auto;
+  object-fit: cover;
+}
+
+/* === NEW IN SECTION === */
+.new-in {
+  padding: 2rem 1rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+/* === CATEGORY SECTIONS === */
+.category-preview,
+.additional-categories {
+  display: flex;
+  gap: 3rem;
+  padding: 2rem 1rem;
+  background-color: #EEE8E8;
+  flex-wrap: wrap;
+}
+
+.category {
+  flex: 1 1 45%;
+  max-width: 48%;
+  text-align: left;
+}
+
+/* Hover effect */
+.category img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category:hover img {
+  transform: scale(1.02);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* CAPTIONS */
+.caption {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.caption .label {
+  font-weight: 600;
+}
+
+.caption a {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* === FOOTER === */
+.site-footer {
+  background-color: #EEE8E8;
+  color: #000;
+  padding: 2rem 1rem;
+  font-family: 'Buenard', serif;
+  border: none;
+}
+
+.footer-note {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.footer-gray {
+  color: #666;
+  font-weight: bold;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.site-footer h4 {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* === BACK TO TOP BUTTON === */
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  background-color: #FFD209;
+  color: black;
+  border: none;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  z-index: 999;
+}
+
+/* === DARK MODE === */
+body.dark-mode {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+body.dark-mode .site-header {
+  background-color: #1a1a1a;
+}
+
+body.dark-mode .site-footer {
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+body.dark-mode .category-preview,
+body.dark-mode .additional-categories,
+body.dark-mode .new-in {
+  background-color: #222;
+}
+
+body.dark-mode a {
+  color: #FFD209;
+}
+
+body.dark-mode .footer-gray {
+  color: #ccc;
+}
