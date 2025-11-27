@@ -61,7 +61,6 @@ img {
   text-align: center;
   display: inline-block;
 color: #FFD209; /* fallback for unsupported gradient browsers */
-  text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
 }
 
 
@@ -100,7 +99,7 @@ color: #FFD209; /* fallback for unsupported gradient browsers */
   display: flex;
   gap: 2rem;
   padding: 2rem 1rem;
-  background-color: #D2B193; /* rgba(210, 177, 147, 1) */
+  background-color: #EEE8E8; /* rgba(210, 177, 147, 1) */
   flex-wrap: wrap;
 }
 
